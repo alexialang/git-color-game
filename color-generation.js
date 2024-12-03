@@ -28,3 +28,5 @@ export function colorGeneration() {
     const randomDiv = colorDivs[Math.floor(Math.random() * colorDivs.length)];
     randomDiv.style.backgroundColor = targetColor;
 }
+
+colorGeneration()
