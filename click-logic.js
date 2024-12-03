@@ -12,11 +12,13 @@ function setupColorGame() {
 }
 
 function checkColor(clickedDiv, targetColor) {
+    let scoreElement = document.querySelector('#score');
+    let score = parseInt(scoreElement.textContent);
+
     const clickedColor = clickedDiv.style.backgroundColor;
 
     if (clickedColor === targetColor) {
-        alert('Bravo ! Vous avez cliqué sur la bonne couleur.');
-    } else {
-        alert('Dommage ! Ce n’est pas la bonne couleur.');
+        score++;
+        scoreElement.textContent = score;
     }
 }
