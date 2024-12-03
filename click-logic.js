@@ -3,6 +3,12 @@ function setupColorGame() {
     const targetDiv = document.querySelector('#target-color');
 
     const targetColor = targetDiv.style.backgroundColor;
+
+    colorDivs.forEach(div => {
+        div.addEventListener('click', function() {
+            checkColor(this, targetColor);
+        });
+    });
 }
 
 function checkColor(clickedDiv, targetColor) {
