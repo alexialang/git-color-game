@@ -1,2 +1,5 @@
 # git-color-game
-Evaluation Git
+
+Nicolas COQUATRIX
+Alexia LANG
+Maxime THOME
