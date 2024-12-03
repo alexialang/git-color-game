@@ -11,6 +11,7 @@ body {
 }
 
 .game-container {
+  z-index: 1;
   text-align: center;
   background: #fff;
   padding: 20px;
@@ -74,4 +75,35 @@ h1 {
 
 .grid-item:hover {
   transform: scale(1.05);
+}
+
+/* BACKGROUND */
+
+@keyframes move {
+  100% {
+      transform: translate3d(0, 0, 1px) rotate(360deg);
+  }
+}
+
+.background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: #363636;
+  overflow: hidden;
+}
+
+.background span {
+  z-index: -1;
+  width: 20vmin;
+  height: 20vmin;
+  border-radius: 20vmin;
+  backface-visibility: hidden;
+  position: absolute;
+  animation: move;
+  animation-duration: 45;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
