@@ -1,9 +1,6 @@
 setInterval(function (){
     if( minutes === 0 && secondes === 1){
-        document.getElementById("timer").textContent = "00 : 00";
-        let score = document.getElementById("score").value;
-        alert(`Bravo ! Votre score est de : ${score}`);
-        window.location.reload(true);
+        document.getElementById("timer").textContent = "00 : 00"; // Si le minuteur
     } else {
         secondes--; // Décrémentation des secondes, chaque seconde la variable diminue de 1
         if(secondes == 0){
@@ -12,6 +9,12 @@ setInterval(function (){
             if(minutes == 0) {
                 minutes = minutes;
             }
+        }
+
+        if(secondes === 30){
+            let score = document.getElementById("score").ariaValueMax;
+            alert("")
+            window.location.reload(true);
         }
 
         if(minutes.toString().length == 1){

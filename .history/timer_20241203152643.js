@@ -14,6 +14,10 @@ setInterval(function (){
             }
         }
 
+        if(secondes === 0){
+
+        }
+
         if(minutes.toString().length == 1){
             minutes = "0" + minutes;
         }
