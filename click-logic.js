@@ -20,5 +20,6 @@ function checkColor(clickedDiv, targetColor) {
     if (clickedColor === targetColor) {
         score++;
         scoreElement.textContent = score;
+        
     }
 }
